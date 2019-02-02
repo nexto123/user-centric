@@ -36,6 +36,13 @@ header {
     word-spacing: 10px;
 }
 
+.heading-box{
+    position: relative;
+    top: 150px;
+
+}
+
+
 .fa-trademark{
   position: relative;        
   font-size: 15px;  
@@ -71,7 +78,6 @@ li{
 }
 
 .hvr-underline-reveal:before {
-    content: "";
     position: absolute;
     z-index: -1;
     left: 0;
@@ -88,3 +94,130 @@ li{
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
+
+
+.gallery-container {
+    background-color: #fff;
+    color: #35373a;
+    min-height: 100vh;
+    padding: 30px 50px;
+}
+
+.gallery-container  {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container .page-description {
+    text-align: center;
+    margin: 25px auto;
+    color: #999;
+}
+
+.tz-gallery {
+    position: relative;
+    top: 100px;
+    padding: 40px;
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox{
+    
+    width: 100%;
+    /*--max-height--*/
+    border-radius: 0;
+    position: relative;
+}
+
+.tz-gallery .lightbox:before {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    opacity: 0;
+    color: #fff;
+    font-family: 'Lato', 'Arial', sans-serif;
+    content: 'click';
+    pointer-events: none;
+    z-index: 9000;
+    transition: 0.4s;
+}
+
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    opacity: 0;
+    background-color: rgba(46, 132, 206, 0.7);
+    transition: 0.4s;
+}
+
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+img .tz-gallery .lightbox {
+    width: 100%;
+    max-width: 300px;
+    
+    border-radius: 0;
+    position: relative;
+}
+
+.full-image img {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    -moz-box-shadow: 0 0 8px rgba(0,0,0,.6);
+    box-shadow: 0 0 8px rgba(0,0,0,.6);
+}
+
+.grid-img{
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    min-height: 104px;
+    
+}
+
+@media(max-width: 768px) {
+    .grid-img {
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    min-height: 104px;
+    /* max-width: 300px; */
+}
+   
+}
+
+
+
+
+/*------media queries-------*/
+
+/*@media only screen and (max-width: 600px) {
+  {
+    background-color: lightblue;
+  }
+}*/
+
