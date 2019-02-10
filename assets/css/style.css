@@ -10,7 +10,7 @@ body {
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
 }
@@ -21,6 +21,16 @@ h3,
 h4{
     font-weight: 300;
     text-transform: uppercase;
+}
+
+.citi-heading:after {
+    display: block;
+    height: 2px;
+    background-color: #dc3545;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }
 
 header {
@@ -42,7 +52,16 @@ header {
     top: 150px;
 
 }
-
+.abt:after{
+   
+   display: block;
+    height: 2px;
+    background-color: #dc3545;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px; 
+}
 
 .fa-trademark{
   position: relative;        
@@ -152,7 +171,6 @@ li{
     transition: 0.4s;
 }
 
-
 .tz-gallery .lightbox:after {
     position: absolute;
     top: 0;
@@ -173,12 +191,18 @@ li{
     background-color: transparent !important;
 }
 
-img .tz-gallery .lightbox {
+ .lightbox {
     width: 100%;
     max-width: 300px;
     
     border-radius: 0;
     position: relative;
+}
+.spot{
+    margin: 10px;
+}
+.app{
+    margin: 10px;
 }
 
 .full-image img {
@@ -203,15 +227,15 @@ img .tz-gallery .lightbox {
     background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.79)), url('../img/bock.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 170vh;
     background-attachment: fixed;
 }
 audio {
-    width: 250px;
+    width: 100%;
     height: 54px;
 }
 .card {
-    margin: 20px;
+    margin: 30px;
     position: relative;
     display: -ms-flexbox;
     display: flex;
@@ -225,78 +249,297 @@ audio {
     border-radius: .25rem;
 }
 
+.audio-card-row{
+    margin: auto 0;
+}
+.audio-title{
+    font-size: 120%;
+}
+
+/*contact form*/
+
+.contact-form{
+    background: linear-gradient(#8e9eab, #eef2f3);
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+.contact-form .form-control{
+    border-radius:1rem;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 14%;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: #0062cc;
+}
+.contact-form .btnContact {
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5%;
+    background: #dc3545;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    cursor: pointer;
+}
+
+/*---------footer-------*/
+
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #dc3545 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+/*--------section-----*/
+.section-about{
+    background-color: #a7a7a738;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.about-container{
+    position: relative;
+    top: 150px;
+}
 
 
-
-/* Container needed to position the overlay. Adjust the width as needed */
-/*.container {*/
-/*  position: relative;*/
-/*  width: 100%;*/
-/*  max-width: 400px;*/
-/*}*/
-
-/* Make the image to responsive */
-/*.image {*/
-/*  width: 100%;*/
-/*  height: auto;*/
-/*}*/
-
-/* The overlay effect (full height and width) - lays on top of the container and over the image */
-/*.overlay {*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  bottom: 0;*/
-/*  left: 0;*/
-/*  right: 0;*/
-/*  height: 100%;*/
-/*  width: 100%;*/
-/*  opacity: 0;*/
-/*  transition: .3s ease;*/
-/*  background-color: red;*/
-/*}*/
-
-/* When you mouse over the container, fade in the overlay icon*/
-/*.container:hover .overlay {*/
-/*  opacity: 1;*/
-/*}*/
-
-/* The icon inside the overlay is positioned in the middle vertically and horizontally */
-/*.icon {*/
-/*  color: white;*/
-/*  font-size: 100px;*/
-/*  position: absolute;*/
-/*  top: 50%;*/
-/*  left: 50%;*/
-/*  transform: translate(-50%, -50%);*/
-/*  -ms-transform: translate(-50%, -50%);*/
-/*  text-align: center;*/
-/*}*/
-
-/* When you move the mouse over the icon, change color */
-/*.fa-user:hover {*/
-/*  color: #eee;*/
-/*}*/
-
-
-@media(max-width: 768px) {
-    .grid-img {
+@media(max-width: 800px) {
+.grid-img {
     width: 100%;
     height: 100%;
     max-height: 200px;
     min-height: 104px;
     /* max-width: 300px; */
-}
-   
-}
-
-
-
-
-/*------media queries-------*/
-
-/*@media only screen and (max-width: 600px) {
-  {
-    background-color: lightblue;
   }
-}*/
+  .fa-trademark {
+    position: relative;
+    font-size: 10px;
+    bottom: 20px;
+    left: 10px;
+   }
+    .contact-form .btnContact {
+    width: 100%;
+   }
+   .heading-box {
+    position: relative;
+    top: 80px;
+  }
+  .fa-angle-down {
+    display: none;
+  }
+  .card-img-top {
+    display: none;
+  }
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.79)), url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    background-attachment: fixed;
+  }
+  	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+   }
+   .svg-bar{
+       display: none;
+   }
+   .gallery-container {
+    min-height: 80vh;
+   }
+  
+}
+
+@media(max-width: 600px) {
+body{
+    
+    font-size: 16px;
+  }
+  .heading-text{
+    font-size: 200%;
+    color: #fff;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+   }
+  
+   .about-container {
+    position: relative;
+    top: 50px;
+}
+
+}
+
+@media(max-width: 411px) {
+body{
+    
+    font-size: 16px;
+  }
+  h2,
+  h3,
+  h4,
+  h5{
+      font-size: 150%;
+  }
+  
+  .contact-form .btnContact {
+    width: 100%;
+}
+.media {
+    
+    height: 170vh;
+    background-attachment: fixed;
+}
+
+  .citi-heading:after{
+    font-size: 120%;
+    display: block;
+   
+   }
+
+  .heading-text{
+    font-size: 120%;
+    color: #fff;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+  }
+  svg {
+    display: none;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+  .gallery-container {
+    text-align: center;
+    margin-top: 0px;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: bold;
+}
+.tz-gallery {
+    position: relative;
+    top: 0px;
+    padding: 0px;
+}
+section {
+    padding: 0px;
+}
+.card-img-top {
+    display: none;
+    
+  }
+ 
+}
+
+@media(max-width: 365px) {
+body{
+    
+    font-size: 16px;
+   }
+   .fa-trademark {
+    display: none;
+   }
+   .about-container {
+    position: relative;
+    top: 50px;
+  }
+  .media {
+    
+    height: 200vh;
+    background-attachment: fixed;
+  }
+  .about-container{
+    position: relative;
+    top: 10px;
+ }
+ li {
+    font-size: 12px;
+}
+  
+} 
 
