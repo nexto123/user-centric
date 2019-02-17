@@ -94,7 +94,7 @@ appropriately.
  Git
 
 
-## Authors
+## Author
 
 Ernest Bruce Brown
 
