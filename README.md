@@ -1,6 +1,6 @@
 # User-Centric Project
 
-A Code Institute Project. User-centric front-end designed web design.
+A Code Institute Project. User-centric front-end design.
 
 ## Getting Started
 
