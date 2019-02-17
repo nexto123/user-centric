@@ -1,6 +1,6 @@
 # User-Centric Project
 
-A Code Institute Project. User-centric front-end designed web design.
+## A Code Institute Project. User-centric front-end designed web design.
 
 ## Getting Started
 
@@ -20,8 +20,9 @@ of HTML5, CSS3, BOOTSTRAP4 and modern web editor, like brackets or vscode.
 * [Animate.js](https://daneden.github.io/animate.css/)
 * [Hover CSS](http://ianlunn.github.io/Hover/)
 * [CSS3]
-* [fontawesone](https://fontawesome.com/icons?d=gallery&s=solid&m=free)
+* [fontawesone icons](https://fontawesome.com/icons?d=gallery&s=solid&m=free)
 * [bootsnipp](https://bootsnipp.com)
+* [Google fonts](https://fonts.google.com/)
 
 
     
@@ -45,10 +46,8 @@ To create a new repository;
 
 ## Testing:
 
-The app has been tested on the ipad, ipad pro, iphone 6 and 7 and they 
-resize very well on their screen. Consideration has been given to the text, 
-and screen sizes over 600px upwards have a standard font-size of 16px, 
-and when they break into lower 600px get font-size of 12px.
+The app has been tested on the ipad, ipad pro, iphone 6,7,X,ipad and they 
+resize very well on their screen. Consideration has been given to the text rendering aswell. 
 The font selected 'Lato' renders perfectly on most browsers, 
 including mozilla, safari and chrome, as am yet to test them on IE.9 and above.
 A lot of tweeking went into the bootstrap lightbox as they are preset from the 
@@ -91,7 +90,7 @@ appropriately.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+Ernest Bruce Brown
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
